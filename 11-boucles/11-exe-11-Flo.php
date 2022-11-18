@@ -67,8 +67,7 @@ foreach ($stagiaires as $key => $value)
     <p>Voir la doc sur les tableaux : Affichez tous les noms de la variable $stagiaires classés par ordre alphabétique séparés par un " | "</p>
     <?php
 
-foreach ($stagiaires as $a, $b, $c => $value)
-echo $
+
     ?>
     <h4>Exe 4 </h4>
     <p>Affichez les chiffres de 0 à la valeur de la variable $hasard (entiers positif : 0, 1, 2, 3, ...) séparés par des ,</p>
