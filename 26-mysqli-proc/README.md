@@ -26,4 +26,17 @@ On crée un .gitignore pour ne pas envoyer notre fichier config.php sur github p
 
 config.php.create en est une copie sans les vrais paramètres de connexion !
 
+## transtypage
+
+Le transtypage automatique d'un langage permet de transformer à la vollée une variable d'un type vers un autre.
+
+Il est activé par défaut en PHP
+
+$i = "5";
+
+// EN SQL le transtypage fonctionne aussi, sauf pour les LIMIT
+
+        SELECT * FROM statistiques WHERE ID = $i ; // fonctionne "5" est converti en 5
+        SELECT * FROM statistiques LIMIT 0 , $i ; // erreur, le transtypage ne fonctionne pas dans ce cas -> "5"
+
 

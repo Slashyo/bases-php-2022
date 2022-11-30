@@ -48,8 +48,11 @@ try {
 
     // affichage de l'erreur encodée en utf8 avec utf8_encode()
     echo utf8_encode($e->getMessage());
+    // affichage du code erreur, entre "" on doit utiliser pour la concaténation les {} quand on utilise des objets
+    // echo "<br> code erreur: ".$e->getCode()  ; // peut s'écrire:
+    echo "<br> code erreur: {$e->getCode()}" ;
 }
-    //var_dump($mysqliConnect);
+    var_dump($mysqliConnect);
     ?>
     <h4>Déconnexion</h4>
     <p>Optionnel mais doit être mis pour les bonnes pratiques.<br>En effet en mysql ou mariaDB les connexions se ferment automatiquement en fin de script. ! En cas de connexion permanente, il ne faut pas l'utiliser!<br>Les connexions permanentes sont utilisées sur les gros serveurs ayant les capacités de les supporter (gain de vitesse)</p>
