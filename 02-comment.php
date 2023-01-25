@@ -5,9 +5,11 @@
 # une autre manière de faire un commentaire sur une ligne un commentaire sur une ligne un commentaire sur une lignun commentaire sur une ligneun commentaire sur une ligne toujours sur la ligne 5
 
 /*
+
 Commentaires
 sur plusieures
 lignes
+
 */
 ?>
 <p>Commentaire html</p>
